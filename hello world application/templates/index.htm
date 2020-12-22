@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+
+
+<title>Document</title>
+</head>
+<body>
+
+  <button style="position: absolute; top:15rem; left:20rem">
+    <div class="text"  data-text="world">
+      HELLO
+
+    </div>
+  </button>
+
+<div class="bg"></div>
+
+<style>
+    * , *::before , *::after
+{
+
+  box-sizing: border-box;
+
+}
+
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: linear-gradient(135deg, #0099F7 , #F11712);;
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+button::before
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0099F7 , #F11712) bottom / cover;
+  transition: .2s;
+  z-index: -1;
+}
+
+
+button
+{
+  font-size: 80px;
+  padding: 100px 250px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover::before
+{
+  transform: scale(2);
+}
+
+button .text
+{
+  z-index: 1;
+  position: absolute;
+  transition: .3s;
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  text-transform: uppercase;
+  
+}
+
+ /* Hidden behind the hello text*/
+
+button .text::before
+{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%) scale(0.22);
+  content: attr(data-text);
+  transition: .3s;
+  color: #fff;
+  opacity: 0;
+
+}
+
+button:hover .text
+{
+  transform: scale(5);
+  color: transparent;
+}
+
+button:hover .text::before
+{
+  opacity: 1;
+}
+
+
+
+
+
+</style>
+
+</body>
+</html>
