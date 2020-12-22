@@ -20,6 +20,7 @@ pip install datbases
 
 pip install pydantic
 
+pip install jinja2
 
 
 FOR DATABASE :--->
