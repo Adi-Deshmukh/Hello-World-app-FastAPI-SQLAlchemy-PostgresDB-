@@ -4,16 +4,52 @@ It is just a simple hello world application using FastApi , SQLAlchemy , Postgre
 
 All the CRUD API's operations can be viewed using the fastapi interactive docs page.
 
-FOR DATABASE :---
+
+
+Modules To Import :---->
+
+pip install SQLAlchemy
+
+pip install fastapi
+
+pip install uvicorn
+
+pip install typing
+
+pip install datbases
+
+pip install pydantic
+
+
+
+FOR DATABASE :--->
 
 Download PostgresDB
  
 and change the link as the username , port:NO , Pwd etc in the link at the top 
 
-and you can use the Api 
+and connect your database
 
 
-At last run the server  in terminal usind ( Uvicorn main:app --reload) command.
+To run the server :--->
+
+  uvicorn main:app --reload
+  
+ 
+------------------------------------------------------
+
+If still not able to use the CRUD operations
+
+there is also a video demonstrating them.
+
+-------------------------------------------------------
+
+
+
+
+
+
+
 
 
 
