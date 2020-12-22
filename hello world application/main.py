@@ -4,8 +4,6 @@
 from fastapi import FastAPI , Request, Depends, Form
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
-import datetime 
-import uuid
 import sqlalchemy
 import databases
 from pydantic import BaseModel, Field
@@ -14,7 +12,7 @@ import jinja2
 
 ## Making Tabel and colums using sqlalchemy
 
-DATABASE_URL = "postgresql://postgres:aditya@127.0.0.1:5433/HELLOWORLD"
+DATABASE_URL = "postgresql://postgres:aditya@127.0.0.1:5433/HELLOWORLD" # --> This is the database url
 database = databases.Database(DATABASE_URL)
 metadata = sqlalchemy.MetaData()
 
