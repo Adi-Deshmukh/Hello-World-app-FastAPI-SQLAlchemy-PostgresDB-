@@ -145,3 +145,4 @@ async def delete_user(user: UserDelete = Depends()):
         "status"  : True,
         "message" : "user deleted successfully"
     }
+
