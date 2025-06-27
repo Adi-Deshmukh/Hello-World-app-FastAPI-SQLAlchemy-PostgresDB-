@@ -6,44 +6,27 @@ All the CRUD API's operations can be viewed using the fastapi interactive docs p
 
 
 
-Modules To Import :---->
+## Requirements
+```
+pip install SQLAlchemy fastapi uvicorn typing datbases pydantic jinja2
+```
+# DATABASE
 
-pip install SQLAlchemy
-
-pip install fastapi
-
-pip install uvicorn
-
-pip install typing
-
-pip install datbases
-
-pip install pydantic
-
-pip install jinja2
-
-
-FOR DATABASE :--->
-
-Download PostgresDB
- 
-and change the link as the username , port:NO , Pwd etc in the link at the top 
-
-and connect your database
-
+-Download PostgresDB
+ and connect your database
 
 To run the server :--->
-
-  uvicorn main:app --reload
+```bash
+uvicorn main:app --reload
+```
   
- 
-------------------------------------------------------
+ ---
 
 If still not able to use the CRUD operations
 
 there is also a video demonstrating them.
 
--------------------------------------------------------
+
 
 
 
